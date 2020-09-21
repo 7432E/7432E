@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*, *::before, *::after{
+    box-sizing: border-box ;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo-Image {
+    width: 64px;
+    height: 55px;
+}
+
+.Dutch-Fork {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-right: 0.7rem;
+    margin-left: 0.3rem;
+}
+
+.Vex-Robotics {
+    color: #C92A2A;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+.Top-Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Arrow {
+    width: 1rem;
+    height: 1rem;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.dropbtn {
+    background-color: rgb( 0, 0, 0);
+    color: white;
+    padding: 0;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 12vw;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0,0,0,0);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      color: #C92A2A;
+      
+}
+    
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+    
+  }
+  
+  /* rotate the arrow */
+  .dropdown:hover .Arrow {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  /* children will be positioned relativly to this element */
+.Line {
+    position: relative;
+    height: 0.3rem;
+}
+
+
+
+.left,
+.center,
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.left { background: #C92A2A }
+.center { background: #C92A2A }
+.right { background: #C92A2A }
+
+
+/* we need room for a 20 pixel border radius (on one side) */
+.left,
+.right { width: 0.5vw }
+
+.left { border-radius: 0.5vw 0 0 0.5vw }
+.right { border-radius: 0 0.5vw 0.5vw 0 }
+
+
+/* child layout definitions */
+.center {
+    /* center needs to be 20 pixels from the left, 
+    so it doesn't overlap with the .left element */
+    
+    left: 0.5vw;
+
+    /* needs a width of 1 pixel, this causes 
+    scaleX(60) is equal to 60 pixels */
+    width: 10vw;
+    
+
+    /* we need to scale the texture from the left side 
+    for it to align correctly, default is center */
+    transform-origin: left;
+}
+
+.right {
+    /* we need to move the right element to align with
+    the right side of the .center element 
+    20px + 60px = 80px */
+    transform: translateX(1.5vw);
+}
+
+.center {
+    animation: center-animate 1s ease-in;
+    animation-fill-mode: forwards; 
+}
+
+.right {
+    animation: right-animate 1s ease-in;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes right-animate {
+   
+    100% { transform: translateX(80vw) }
+}
+
+@keyframes center-animate {
+    
+    100% { transform: scaleX(7.97) }
+}
