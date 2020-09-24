@@ -39,9 +39,11 @@ body {
 
 
 .Top-Header {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .Arrow {
@@ -54,7 +56,7 @@ body {
 }
 
 .dropbtn {
-    background-color: rgb( 0, 0, 0);
+    background-color: transparent;
     color: white;
     padding: 0;
     font-size: 1.4rem;
@@ -67,6 +69,7 @@ body {
     position: relative;
     display: inline-block;
     margin-right: 12vw;
+    background-color: transparent;
     
   }
   
@@ -74,8 +77,8 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(0,0,0,0);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px;
     z-index: 1;
   }
 
@@ -187,12 +190,25 @@ body {
 .website-body {
     display: flex;
     justify-content: center;
+    z-index: 99;
+}
+
+.bg-tile {
+    margin-top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: white;
+    position: relative;
+    z-index: 2;
 }
 
 #tletters{
     margin-top: 30vh;
     animation: fill-anim 1s ease forwards 3s;
     fill: transparent;
+    position: fixed;
+    z-index: 1;
 }
 /*724*/
 #tletters path:nth-child(1){
