@@ -39,9 +39,13 @@
 
 
 
-
+header{
+    margin: 0;
+    padding: 0;
+}
 
 .Top-Header {
+    
     width: 100vw;
     display: flex;
     align-items: center;
@@ -197,6 +201,9 @@
 }
 
 .bg-parent {
+    margin: 0;
+    padding: 0;
+    top: 0;
     overflow: scroll;
     height: 100vh;
     scroll-snap-type: mandatory;
