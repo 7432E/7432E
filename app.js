@@ -1,7 +1,4 @@
 
-const letters = document.querySelectorAll("#tletters path");
+import LocomotiveScroll from 'locomotive-scroll';
 
-
-for(let i = 0; i<letters.length; i++) {
-    console.log(`Letter ${i} is ${letters[i].getTotalLength()}`);
-}
+const scroll = new LocomotiveScroll();
