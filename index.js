@@ -39,7 +39,8 @@ window.addEventListener('scroll', function ( event ) {
             document.querySelector(".bg-tile-0").getBoundingClientRect().top,
             document.querySelector(".bg-tile-1").getBoundingClientRect().top,
             document.querySelector(".bg-tile-2").getBoundingClientRect().top,
-            document.querySelector(".bg-tile-3").getBoundingClientRect().top]
+            document.querySelector(".bg-tile-3").getBoundingClientRect().top,
+            document.querySelector(".bg-tile-4").getBoundingClientRect().top]
 
         // reset our target to null
         target = null;
@@ -51,8 +52,11 @@ window.addEventListener('scroll', function ( event ) {
                 item = ".bg-tile-" + i;
                 target = document.querySelector(item);
             } else if(tiletops[i] <= 0 && tiletops[i] > window.outerHeight/-6) {
-                item = ".bg-tile-" + i;
-                target = document.querySelector(item);
+                if(i != 4) {
+                    item = ".bg-tile-" + i;
+                    target = document.querySelector(item);
+                }
+                
             }
         }
         if(target != null) {
@@ -64,25 +68,6 @@ window.addEventListener('scroll', function ( event ) {
 	}, 40);
 
 }, false);
-
-var frameNumber = 0, // start video at frame 0
-        // lower numbers = faster playback
-        playbackConst = 300, 
-        // get page height from video duration
-         
-        // select video element         
-        vid = document.getElementById('v0'); 
-        // var vid = $('#v0')[0]; // jquery option
-
-
-        // Use requestAnimationFrame for smooth playback
-        function scrollPlay(){  
-            var frameNumber  = window.pageYOffset/playbackConst;
-            vid.currentTime  = frameNumber;
-        window.requestAnimationFrame(scrollPlay);
-        }
-
-        window.requestAnimationFrame(scrollPlay);
 
 
 
