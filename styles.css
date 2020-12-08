@@ -256,6 +256,7 @@ header{
     width: 100vw;
     height: 100vh;
     background-color: white;
+    display: flex;
     position: relative;
     z-index: 2;
 }
@@ -966,7 +967,7 @@ header{
 }
 
 .what-is-vex-container {
-    width: 40vw;
+    width: 35vw;
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -974,12 +975,11 @@ header{
 }
 
 .what-is-vex-title, .this-year-title {
+    width: 90%;
     font-family: Roboto;
     display: flex;
     text-decoration: none;
     margin-top: 2vh;
-    padding: 0;
-    margin-top: 0vh;
     text-align: center;
     color: white;
     font-weight: bolder;
@@ -990,17 +990,17 @@ header{
     font-family: Roboto;
     display: flex;
     text-decoration: none;
-    margin-right:2vw;
     padding: 0;
-    margin-top: 0vh;
+    margin-top: 4vh;
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 2vw
+    width: 90%;
+    font-size: 1.5vw
 }
 
 .this-year-container {
-    width: 59vw;
+    width: 64vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1008,20 +1008,63 @@ header{
 }
 
 .field-image {
-    width: 70%;
+    width: 60%;
 }
 
 .game-description {
+    width: 90%;
     font-family: Roboto;
     display: flex;
     text-decoration: none;
-    margin-right:2vw;
     padding: 0;
-    margin-top: 0vh;
+    margin-top: 2vh;
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 2vw
+    font-size: 1.5vw
+}
+
+.links-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.game-link {
+    font-family: Roboto;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 2vh;
+    text-align: center;
+    color: #C92A2A;
+    font-weight: bolder;
+    font-size: 3vw;
+
+    transition: 0.5s;
+}
+
+.game-link:hover {
+    color: white;
+    font-size: 3.2vw;
+}
+
+.links-title {
+    font-family: Roboto;
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 2vh;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+
+.main-image {
+    width: 70%;
 }
 .done {
     opacity: 1;
