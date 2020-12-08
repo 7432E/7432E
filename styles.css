@@ -455,7 +455,7 @@ header{
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 0vh;
+    height: 100vh;
     color: black;
     background-color: transparent;
     position: relative;
