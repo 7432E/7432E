@@ -600,12 +600,13 @@ header{
     
 }
 
-.A path:nth-child(5){
+.B path:nth-child(5){
     
     stroke: #C92A2A;
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
+    stroke-dasharray: 970px;
+    stroke-dashoffset: 970px;
     animation: line-anim 1.5s ease forwards 1.2s;
+    
     
 }
 
@@ -659,7 +660,7 @@ header{
 
 
 .team-picture {
-   width: 50%;
+   width: 40%;
    height: auto;
    object-fit: contain;
 }

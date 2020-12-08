@@ -4,12 +4,14 @@
 var target = null;
 const teamletters = document.querySelector("#tletters");
 const mainletters = document.querySelector("#main-letters")
+const secondaryletters = document.querySelector("#main-letters-2")
 const vid = document.getElementById("v")
 if (teamletters != null) {
   teamletters.style.display = "flex";
   vid.style.display = "none";
 } else {
   mainletters.style.display = "flex"
+  secondaryletters.style.display = "flex"
 }
 
 
@@ -83,8 +85,10 @@ window.addEventListener('scroll', function (event) {
   } else {
     if (document.querySelector(".main-tile-1").getBoundingClientRect().top <= window.outerHeight / 6 && mainletters.style.display == "flex") {
       mainletters.style.display = "none";
+      secondaryletters.style.display = "none";
     } else if (document.querySelector(".main-tile-1").getBoundingClientRect().top > window.outerHeight / 6 && mainletters.style.display == "none") {
       mainletters.style.display = "flex";
+      secondaryletters.style.display = "flex";
     }
 
     // Clear our timeout throughout the scroll
