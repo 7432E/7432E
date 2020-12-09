@@ -807,7 +807,9 @@ header{
     margin-top: 5vh;
     color: #C92A2A;
     font-weight: bolder;
-    font-size: 3vw
+    font-size: 3vw;
+    opacity: 0;
+    transition: 3s;
 }
 
 .image-and-paragraph-container {
@@ -826,11 +828,15 @@ header{
     width: 40%;
     color: black;
     font-weight: bold;
-    font-size: 1.2vw
+    font-size: 1.2vw;
+    opacity: 0;
+    transition: 3s;
 }
 
 .history-image {
     width: 40%;
+    opacity: 0;
+    transition: 3s;
 }
 .mentors-container {
     width: 50vw;
@@ -864,6 +870,9 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    opacity: 0;
+    transition: 3s;
 }
 
 .teacher-image {
@@ -916,6 +925,9 @@ header{
     width: 80vw;
     height: 30vh;
     align-items: center;
+
+    opacity: 0;
+    transition: 3s;
 }
 
 .sponsors-title {
@@ -983,7 +995,10 @@ header{
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 3vw
+    font-size: 3vw;
+
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .about-vex-paragraph {
@@ -996,7 +1011,10 @@ header{
     color: white;
     font-weight: bolder;
     width: 90%;
-    font-size: 1.5vw
+    font-size: 1.5vw;
+
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .this-year-container {
@@ -1009,6 +1027,9 @@ header{
 
 .field-image {
     width: 60%;
+
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .game-description {
@@ -1021,7 +1042,10 @@ header{
     text-align: center;
     color: white;
     font-weight: bolder;
-    font-size: 1.5vw
+    font-size: 1.5vw;
+
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .links-container {
@@ -1042,6 +1066,7 @@ header{
     color: #C92A2A;
     font-weight: bolder;
     font-size: 3vw;
+    opacity: 0;
 
     transition: 0.5s;
 }
@@ -1049,6 +1074,7 @@ header{
 .game-link:hover {
     color: white;
     font-size: 3.2vw;
+    
 }
 
 .links-title {
@@ -1061,10 +1087,14 @@ header{
     color: white;
     font-weight: bolder;
     font-size: 2.5vw;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .main-image {
     width: 70%;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .column-paragraph {
@@ -1077,6 +1107,8 @@ header{
     color: black;
     font-weight: bolder;
     font-size: 1.2vw;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .event-container {
@@ -1096,6 +1128,8 @@ header{
     color: #C92A2A;
     font-weight: bolder;
     font-size: 1.2vw;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .event-description {
@@ -1108,6 +1142,8 @@ header{
     color: black;
     font-weight: bolder;
     font-size: 1vw;
+    opacity: 0;
+    transition: opacity 3s;
 }
 
 .STEM-link {
@@ -1120,7 +1156,7 @@ header{
     font-weight: bolder;
     font-size: 3vw;
     text-align: center;
-
+    opacity: 0;
     transition: 0.3s;
 }
 
