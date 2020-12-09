@@ -102,8 +102,7 @@ window.addEventListener('scroll', function (event) {
         document.querySelector(".main-tile-0").getBoundingClientRect().top,
         document.querySelector(".main-tile-1").getBoundingClientRect().top,
         document.querySelector(".main-tile-2").getBoundingClientRect().top,
-        document.querySelector(".main-tile-3").getBoundingClientRect().top,
-        document.querySelector(".main-tile-4").getBoundingClientRect().top]
+        document.querySelector(".main-tile-3").getBoundingClientRect().top]
 
       // reset our target to null
       target = null;
