@@ -43,6 +43,10 @@ window.addEventListener('scroll', function (event) {
     else if (document.querySelector(".bg-tile-2").getBoundingClientRect().top > 0 && vid.style.display == "flex") {
       vid.style.display = "none"
     }
+
+    //if(document.querySelector(".bg-tile-4").getBoundingClientRect().top < 0 && vid.style.display == "flex") {
+      //vid.style.display = "none"
+    
     // Clear our timeout throughout the scroll
     window.clearTimeout(isScrolling);
 
