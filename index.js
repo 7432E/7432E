@@ -80,7 +80,7 @@ window.addEventListener('scroll', function (event) {
 
 
 
-    }, 40);
+    }, 1000);
 
   } else {
     if (document.querySelector(".main-tile-1").getBoundingClientRect().top <= window.outerHeight / 6 && mainletters.style.display == "flex") {
@@ -128,7 +128,7 @@ window.addEventListener('scroll', function (event) {
 
 
 
-    }, 40);
+    }, 1000);
   }
 
 }, false);
