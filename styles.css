@@ -11,6 +11,7 @@
     margin: 0;
     font-family: Roboto, sans-serif;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .Logo {
@@ -727,7 +728,6 @@ header{
     width: 100%;
     height: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -743,6 +743,7 @@ header{
     font-weight: bold;
     font-size: 1.5vw;
     opacity: 0;
+    line-height: 1.3;
     transition: opacity 1s;
 }
 
