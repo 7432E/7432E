@@ -377,8 +377,9 @@ header{
 }
 
 @keyframes middle-animate-2 {
-    
-    100% { transform: scaleY(11.3) }
+    0% {width: 8px}
+    100% { transform: scaleY(11.3); 
+        width: 8px; }
 }
 
 
